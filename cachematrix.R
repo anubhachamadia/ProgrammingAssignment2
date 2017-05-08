@@ -4,6 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
+<<<<<<< HEAD
   inv<-NULL
   set<-function(y)
   {
@@ -15,12 +16,16 @@ makeCacheMatrix <- function(x = matrix()) {
   getInverse<-function()inv
   list(set=set,get=get,setInverse=setInverse,getInverse=getInverse)
 }
+=======
+>>>>>>> parent of 43ef188... Programming Assignment 2_AnubhaChamadia
 
+}
 
 
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
+<<<<<<< HEAD
   ## Return a matrix that is the inverse of 'x'
   inv<-x$getInverse()
   if(!null(inv)){
@@ -31,5 +36,8 @@ cacheSolve <- function(x, ...) {
   inv<-solve(mat,...)
   x$setInverse(inv)
   inv
+=======
+        ## Return a matrix that is the inverse of 'x'
+>>>>>>> parent of 43ef188... Programming Assignment 2_AnubhaChamadia
 }
 
