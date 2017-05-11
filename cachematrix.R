@@ -1,10 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
+
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-<<<<<<< HEAD
+  
   inv<-NULL
   set<-function(y)
   {
@@ -16,28 +17,30 @@ makeCacheMatrix <- function(x = matrix()) {
   getInverse<-function()inv
   list(set=set,get=get,setInverse=setInverse,getInverse=getInverse)
 }
-=======
->>>>>>> parent of 43ef188... Programming Assignment 2_AnubhaChamadia
 
-}
+
+
 
 
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-<<<<<<< HEAD
+  
   ## Return a matrix that is the inverse of 'x'
   inv<-x$getInverse()
-  if(!null(inv)){
+  # if the inverse has already been calculated
+  if (!is.null(inv)){
+    # get it from the cache and skips the computation
     message("getting cached data")
     return(inv)
   }
+  # otherwise, calculates the inverse 
   mat<-x$get()
   inv<-solve(mat,...)
+  # sets the value of the inverse in the cache via the setinv function.
   x$setInverse(inv)
   inv
-=======
-        ## Return a matrix that is the inverse of 'x'
->>>>>>> parent of 43ef188... Programming Assignment 2_AnubhaChamadia
+  
+  ## Return a matrix that is the inverse of 'x'
+  
 }
-
